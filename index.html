@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCalculator -Tanish Ghosh</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-512/calculator-716-461701.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <input type="text" value="" class="result" dir="auto">
+
+        <div class="buttons">
+            <input type="button" value="⌫" class="btn green" onclick="remove()">
+            <input type="button" value="(" class="btn green" onclick="func('(')">
+            <input type="button" value=")" class="btn green" onclick="func(')')">
+            <input type="button" value="÷" class="btn orange" onclick="func('/')">
+
+            <input type="button" value="7" class="btn" onclick="func('7')">
+            <input type="button" value="8" class="btn" onclick="func('8')">
+            <input type="button" value="9" class="btn" onclick="func('9')">
+            <input type="button" value="×" class="btn orange" onclick="func('*')">
+
+            <input type="button" value="4" class="btn" onclick="func('4')">
+            <input type="button" value="5" class="btn" onclick="func('5')">
+            <input type="button" value="6" class="btn" onclick="func('6')">
+            <input type="button" value="-" class="btn orange" onclick="func('-')">
+
+            <input type="button" value="1" class="btn" onclick="func('1')">
+            <input type="button" value="2" class="btn" onclick="func('2')">
+            <input type="button" value="3" class="btn" onclick="func('3')">
+            <input type="button" value="+" class="btn orange" onclick="func('+')">
+
+            <input type="button" value="√" class="btn" onclick='rootcal("√")'>
+            <input type="button" value="0" class="btn" onclick="func('0')">
+            <input type="button" value="." class="btn" onclick="func('.')">
+            <input type="button" value="=" class="btn orange" onclick="result()">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
